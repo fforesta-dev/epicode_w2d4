@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medium</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <svg class="sprite" xmlns="http://www.w3.org/2000/svg">
+      <symbol id="icon-search" viewBox="0 0 24 24">
+        <circle cx="10.5" cy="10.5" r="6.75" fill="none" stroke="currentColor" stroke-width="1.5" />
+        <path
+          d="M15.5 15.5 21 21"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.5"
+          stroke-linecap="round"
+        />
+      </symbol>
+      <symbol id="icon-lists" viewBox="0 0 24 24">
+        <path
+          d="M4.5 7.5h10.5v14l-5.25-3.75L4.5 21.5z"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.5"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M8 3.5h11.5v14.5"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.5"
+          stroke-linejoin="round"
+        />
+      </symbol>
+      <symbol id="icon-bell" viewBox="0 0 24 24">
+        <path
+          d="M12 3.5a5.5 5.5 0 0 0-5.5 5.5v4.25L4.75 17h14.5l-1.75-3.75V9A5.5 5.5 0 0 0 12 3.5z"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.5"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M9.75 19.75a2.25 2.25 0 0 0 4.5 0"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.5"
+        />
+      </symbol>
+      <symbol id="icon-bookmark" viewBox="0 0 24 24">
+        <path
+          d="M18 11.5v10l-6-4.25-6 4.25V5h7.5"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.4"
+          stroke-linejoin="round"
+        />
+        <path d="M18 1.5v7M14.5 5h7" fill="none" stroke="currentColor" stroke-width="1.4" />
+      </symbol>
+      <symbol id="icon-more" viewBox="0 0 24 24">
+        <circle cx="6.25" cy="12" r="2" fill="currentColor" />
+        <circle cx="12" cy="12" r="2" fill="currentColor" />
+        <circle cx="17.75" cy="12" r="2" fill="currentColor" />
+      </symbol>
+      <symbol id="icon-star" viewBox="0 0 15 15">
+        <path
+          d="M7.5 1.3l1.9 4 4.3.5-3.2 3 .9 4.3-3.9-2.2-3.9 2.2.9-4.3-3.2-3 4.3-.5z"
+          fill="currentColor"
+        />
+      </symbol>
+    </svg>
+    <header class="navbar">
+      <div class="container navbar__inner">
+        <a href="#" class="logo">
+          <img src="assets/images/logo.png" alt="Medium" />
+        </a>
+
+        <nav class="navbar__actions">
+          <a href="#" class="icon-btn" aria-label="Search">
+            <svg><use href="#icon-search"></use></svg>
+          </a>
+          <a href="#" class="icon-btn" aria-label="Lists">
+            <svg><use href="#icon-lists"></use></svg>
+          </a>
+          <a href="#" class="icon-btn" aria-label="Notifications">
+            <svg><use href="#icon-bell"></use></svg>
+          </a>
+          <a href="#" class="btn btn--outline">Resume membership</a>
+          <a href="#" class="user-avatar" aria-label="Profile">T</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="container layout">
+      <main class="feed">
+        <nav class="tabs">
+          <a href="#" class="tab">Following</a>
+          <a href="#" class="tab tab--active">Recommended for you</a>
+        </nav>
+        <article class="post">
+          <div class="post__body">
+            <a href="#" class="post__author">
+              <img src="assets/images/kolby-sisk.png" alt="" />
+              <span><strong>Kolby Sisk</strong> in <strong>Udacity Eng &amp; Data</strong></span>
+            </a>
+            <a href="#" class="post__link">
+              <h2 class="post__title">React state management in 2022—Return of the Redux</h2>
+              <p class="post__excerpt">
+                At the beginning of the year if you told me I’d be publishing a recommendation to
+                use Redux I would have laughed in your face. Yet here we are.
+              </p>
+            </a>
+            <div class="post__meta">
+              <div class="post__info">
+                <span>Dec 3</span>
+                <span class="dot">·</span>
+                <span>4 min read</span>
+                <span class="dot">·</span>
+                <a href="#" class="chip chip--small">React</a>
+                <span class="dot">·</span>
+                <span>Popular on Medium</span>
+              </div>
+              <div class="post__actions">
+                <button class="icon-btn" aria-label="Save">
+                  <svg><use href="#icon-bookmark"></use></svg>
+                </button>
+                <button class="icon-btn" aria-label="More">
+                  <svg><use href="#icon-more"></use></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="post__thumb">
+            <img src="assets/images/article-1.jpg" alt="" />
+          </a>
+        </article>
+        <article class="post">
+          <div class="post__body">
+            <a href="#" class="post__author">
+              <img class="round" src="assets/images/navoda-nilakshi.png" alt="" />
+              <span><strong>Navoda Nilakshi</strong></span>
+            </a>
+            <a href="#" class="post__link">
+              <h2 class="post__title">
+                How To Sanitize Your Express App Against MongoDB Injection &amp; Cross-Site
+                Scripting.
+              </h2>
+              <p class="post__excerpt">Easiest way to sanitize your express app.</p>
+            </a>
+            <div class="post__meta">
+              <div class="post__info">
+                <span>Dec 19</span>
+                <span class="dot">·</span>
+                <span>6 min read</span>
+                <span class="dot">·</span>
+                <a href="#" class="chip chip--small">Web Development</a>
+                <span class="dot">·</span>
+                <span>Based on your reading history</span>
+              </div>
+              <div class="post__actions">
+                <button class="icon-btn" aria-label="Save">
+                  <svg><use href="#icon-bookmark"></use></svg>
+                </button>
+                <button class="icon-btn" aria-label="More">
+                  <svg><use href="#icon-more"></use></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="post__thumb"><img src="assets/images/article-2.jpg" alt="" /></a>
+        </article>
+
+        <article class="post">
+          <div class="post__body">
+            <a href="#" class="post__author">
+              <img src="assets/images/dhiwise.png" alt="" />
+              <span><strong>Divyesh Bhalani</strong> in <strong>DhiWise</strong></span>
+            </a>
+            <a href="#" class="post__link">
+              <h2 class="post__title">React 18 new features and updates</h2>
+              <p class="post__excerpt">Know about some cool features and updates of React 18.</p>
+            </a>
+            <div class="post__meta">
+              <div class="post__info">
+                <span>Nov 24</span>
+                <span class="dot">·</span>
+                <span>4 min read</span>
+                <span class="dot">·</span>
+                <a href="#" class="chip chip--small">Reactjs</a>
+                <span class="dot">·</span>
+                <span>Popular on Medium</span>
+              </div>
+              <div class="post__actions">
+                <button class="icon-btn" aria-label="Save">
+                  <svg><use href="#icon-bookmark"></use></svg>
+                </button>
+                <button class="icon-btn" aria-label="More">
+                  <svg><use href="#icon-more"></use></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="post__thumb"><img src="assets/images/article-3.jpg" alt="" /></a>
+        </article>
+
+        <article class="post">
+          <div class="post__body">
+            <a href="#" class="post__author">
+              <img src="assets/images/fively.png" alt="" />
+              <span><strong>Vsevolod Ulyanovich</strong> in <strong>Fively Blog</strong></span>
+            </a>
+            <a href="#" class="post__link">
+              <h2 class="post__title">15 Best Web App Ideas for a Startup in 2021</h2>
+              <p class="post__excerpt">
+                15 Startup Ideas and Technologies That Could Make You a Millionaire
+              </p>
+            </a>
+            <div class="post__meta">
+              <div class="post__info">
+                <span>Oct 29</span>
+                <span class="dot">·</span>
+                <span>6 min read</span>
+                <span class="dot">·</span>
+                <a href="#" class="chip chip--small">Web Development</a>
+                <span class="dot">·</span>
+                <span>Popular on Medium</span>
+              </div>
+              <div class="post__actions">
+                <button class="icon-btn" aria-label="Save">
+                  <svg><use href="#icon-bookmark"></use></svg>
+                </button>
+                <button class="icon-btn" aria-label="More">
+                  <svg><use href="#icon-more"></use></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="post__thumb"><img src="assets/images/article-4.jpg" alt="" /></a>
+        </article>
+
+        <article class="post">
+          <div class="post__body">
+            <a href="#" class="post__author">
+              <img src="assets/images/kolby-sisk.png" alt="" />
+              <span><strong>Kolby Sisk</strong> in <strong>Udacity Eng &amp; Data</strong></span>
+            </a>
+            <a href="#" class="post__link">
+              <h2 class="post__title">Understanding re-rendering and memoization in React</h2>
+              <p class="post__excerpt">
+                The following are quick tips to increase performance in your React application by
+                understanding re-rendering and memoization. To better understand how it works…
+              </p>
+            </a>
+            <div class="post__meta">
+              <div class="post__info">
+                <span>Dec 6</span>
+                <span class="dot">·</span>
+                <span>4 min read</span>
+                <span class="dot">·</span>
+                <a href="#" class="chip chip--small">React</a>
+                <span class="dot">·</span>
+                <span>Popular on Medium</span>
+              </div>
+              <div class="post__actions">
+                <button class="icon-btn" aria-label="Save">
+                  <svg><use href="#icon-bookmark"></use></svg>
+                </button>
+                <button class="icon-btn" aria-label="More">
+                  <svg><use href="#icon-more"></use></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="post__thumb"><img src="assets/images/article-5.jpg" alt="" /></a>
+        </article>
+
+        <article class="post">
+          <div class="post__body">
+            <a href="#" class="post__author">
+              <img src="assets/images/nerd-for-tech.png" alt="" />
+              <span><strong>Arun Kashyap</strong> in <strong>Nerd For Tech</strong></span>
+            </a>
+            <a href="#" class="post__link">
+              <h2 class="post__title">Why Get Rid Of PromisesTo Fetch Data In React?</h2>
+              <p class="post__excerpt">How You Can Make Your Code Well Structured !!</p>
+            </a>
+            <div class="post__meta">
+              <div class="post__info">
+                <span>Jul 5</span>
+                <span class="dot">·</span>
+                <span>5 min read</span>
+                <span class="dot">·</span>
+                <a href="#" class="chip chip--small">React</a>
+                <span class="dot">·</span>
+                <span>Selected for you</span>
+              </div>
+              <div class="post__actions">
+                <button class="icon-btn" aria-label="Save">
+                  <svg><use href="#icon-bookmark"></use></svg>
+                </button>
+                <button class="icon-btn" aria-label="More">
+                  <svg><use href="#icon-more"></use></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="post__thumb"><img src="assets/images/article-6.jpg" alt="" /></a>
+        </article>
+      </main>
+      <aside class="sidebar">
+        <section class="twitter-box">
+          <img
+            src="assets/images/medium-twitter.png"
+            alt="Medium + Twitter"
+            class="twitter-box__logo"
+          />
+          <p>Discover Medium writers you already follow on Twitter.</p>
+          <a href="#" class="btn btn--twitter">
+            <img src="assets/images/twitter.png" alt="" />
+            Connect to Twitter
+          </a>
+          <a href="#" class="twitter-box__later">Maybe Later</a>
+        </section>
+        <section class="sidebar__section">
+          <h3 class="sidebar__title">Recommended topics</h3>
+          <div class="topics">
+            <a href="#" class="chip">Technology</a>
+            <a href="#" class="chip">Money</a>
+            <a href="#" class="chip">Business</a>
+            <a href="#" class="chip">Productivity</a>
+            <a href="#" class="chip">Psychology</a>
+            <a href="#" class="chip">Mindfulness</a>
+            <a href="#" class="chip">Art</a>
+          </div>
+        </section>
+        <section class="sidebar__section">
+          <h3 class="sidebar__title">Who to follow</h3>
+          <ul class="follow-list">
+            <li class="follow">
+              <img src="assets/images/lessig.png" alt="" class="follow__avatar" />
+              <div class="follow__text">
+                <a href="#" class="follow__name">Lessig</a>
+                <p class="follow__bio">law professor, activist.</p>
+              </div>
+              <a href="#" class="btn btn--outline btn--follow">Follow</a>
+            </li>
+            <li class="follow">
+              <img src="assets/images/david-wineberg.png" alt="" class="follow__avatar" />
+              <div class="follow__text">
+                <a href="#" class="follow__name">David Wineberg</a>
+                <p class="follow__bio">
+                  Author, The Straight Dope, or What I learned from my first…
+                </p>
+              </div>
+              <a href="#" class="btn btn--outline btn--follow">Follow</a>
+            </li>
+            <li class="follow">
+              <img src="assets/images/bonsu-thompson.png" alt="" class="follow__avatar" />
+              <div class="follow__text">
+                <a href="#" class="follow__name">Bonsu Thompson</a>
+                <p class="follow__bio">
+                  Bonsu Thompson is a writer, producer, Brooklynite and 2019…
+                </p>
+              </div>
+              <a href="#" class="btn btn--outline btn--follow">Follow</a>
+            </li>
+          </ul>
+        </section>
+        <section class="sidebar__section">
+          <h3 class="sidebar__title">Recently saved</h3>
+          <div class="saved">
+            <a href="#" class="saved__item">
+              <span class="post__author">
+                <img src="assets/images/age-of-awareness.png" alt="" />
+                <span><strong>Eva Keiffenheim</strong> in <strong>Age of Awareness</strong></span>
+              </span>
+              <h4 class="saved__title">
+                The Feynman Technique Will Make You Remember What You Read
+              </h4>
+              <span class="saved__meta">
+                Oct 2, 2020 <span class="dot">·</span> 6 min read
+                <svg class="star"><use href="#icon-star"></use></svg>
+              </span>
+            </a>
+            <a href="#" class="saved__item">
+              <span class="post__author">
+                <img class="round" src="assets/images/chrissy-teigen.png" alt="" />
+                <span><strong>chrissy teigen</strong></span>
+              </span>
+              <h4 class="saved__title">Hi.</h4>
+              <span class="saved__meta">Oct 27, 2020 <span class="dot">·</span> 8 min read</span>
+            </a>
+          </div>
+          <a href="#" class="see-all">See all (3)</a>
+        </section>
+
+        <footer class="sidebar__footer">
+          <a href="#">Help</a>
+          <a href="#">Status</a>
+          <a href="#">Writers</a>
+          <a href="#">Blog</a>
+          <a href="#">Careers</a>
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">About</a>
+        </footer>
+      </aside>
+    </div>
+  </body>
+</html>
